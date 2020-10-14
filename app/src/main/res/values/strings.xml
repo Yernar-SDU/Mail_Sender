@@ -1,0 +1,16 @@
+    <resources>
+        <string name="app_name">TheThirdAssignment</string>
+        <string name="compose_message">Compose message</string>
+        <string name="write">Write</string>
+        <string name="from">from</string>
+        <string name="to">to</string>
+        <string name="your_login">Your Login</string>
+        <string name="recipient">Recipient</string>
+        <string name="text_message">Text message</string>
+        <string name="send">Send</string>
+        <string name="sent_message">Sent messages</string>
+        <string name="arman">Arman:</string>
+        <string name="dastan">Dastan:</string>
+        <string name="helloArman">Hello Arman!..........</string>
+        <string name="wtsup">Whats Up?!..........</string>
+    </resources>

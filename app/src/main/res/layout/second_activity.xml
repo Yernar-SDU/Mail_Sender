@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/write"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/write"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/from"/>
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:hint="@string/your_login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:text="@string/to"/>
+        <EditText
+            android:id="@+id/recipient"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:layout_marginLeft="65dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/recipient"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_message"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tema"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:background="#85CB33"
+        android:onClick="send"
+        android:textColor="#EFFFC8"
+        android:text="@string/send"/>
+
+
+    <Button
+        android:id="@+id/sent_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#85CB33"
+        android:textColor="#EFFFC8"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sent_message"
+        android:text="@string/sent_message"/>
+
+</RelativeLayout>
