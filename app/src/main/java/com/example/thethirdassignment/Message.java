@@ -10,7 +10,7 @@ class Message {
         this.recipient = recipient;
         this.text_message = text_message;
     }
-
+    //Hello
     public String getRecipient() {
         return recipient;
     }
